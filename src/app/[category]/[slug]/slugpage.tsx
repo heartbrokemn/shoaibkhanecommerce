@@ -34,7 +34,8 @@ const SlugPage = ({params}:{params:{slug:string}}) => {
            <div className="container px-5 py-24 mx-auto md:justify-center items-center">
       <div className="lg:w-4/5 mx-auto flex flex-wrap">
      {/* image */}
-        <SlugCompounent image={slug[0].image}/>
+     <SlugCompounent image={Array.isArray(slug[0].image) ? slug[0].image : [slug[0].image]} />
+
         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         {/* category */}
           <h2 className="text-sm title-font text-gray-500 tracking-widest uppercase">
