@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .custom-background{
+    background-image:url('../../public/images/herobackgroun.jpg');
+  }
+.promo-1{
+    background-image: url('../../public//images/backgrounhanger.jpg');
+}
+.promo-2{
+  background-image: url('../../public/images/backgroundf.jpg');
+}
